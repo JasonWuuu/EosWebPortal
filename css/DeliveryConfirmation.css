@@ -1,0 +1,772 @@
+﻿/*
+.address {
+    margin-bottom: 40px;
+}
+
+.address .set-default {
+    margin-left: 15px;
+}
+
+.address .address-list li {
+    border: 1px solid #fff;
+    position: relative;
+}
+.address .address-list li:hover {
+    background-color: #fffae5;
+}
+.address li.selected {
+    background-color: #fff5cc;
+    border: 1px solid #ffe580;
+}
+.address .marker {
+    background: url("../css/images/ico-dz.gif") no-repeat scroll 0 0 transparent;
+    display: none;
+    height: 25px;
+    left: 10px;
+    position: absolute;
+    top: 6px;
+    width: 15px;
+}
+.address .marker-tip {
+    color: #f50;
+    display: none;
+    font-weight: 700;
+    left: 30px;
+    position: absolute;
+    top: 0;
+}
+.address .modify {
+    display: none;
+    position: absolute;
+    right: 10px;
+}
+.address li.selected .marker, .address li.selected .marker-tip, .address li.selected .modify {
+    display: block;
+}
+.address .address-bar {
+    margin-top: 5px;
+}
+.address .new {
+    background: url("../css/images/btn-syxdz.png") no-repeat scroll 0 -1px #fff;
+    display: inline-block;
+    font-size: 0;
+    height: 25px;
+    margin-left: 103px;
+    text-indent: -99px;
+    vertical-align: text-top;
+    width: 90px;
+}
+.address .edit {
+    display: inline-block;
+    margin-left: 103px;
+}
+.other-address {
+    background-color: #fff;
+    border: 3px solid #fff7d8;
+    left: -9999px;
+    margin-left: 35px;
+    padding: 15px;
+    position: absolute;
+    top: -9999px;
+    width: 915px;
+    z-index: 998;
+}
+.other-address .title {
+    color: #404040;
+    float: left;
+    padding-left: 8px;
+    text-align: right;
+    width: 85px;
+}
+.other-address li {
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.other-address li p {
+    overflow: hidden;
+    padding-left: 10px;
+    position: relative;
+}
+.other-address li em {
+    color: red;
+    font-family: simsun;
+    font-style: normal;
+    left: 0;
+    line-height: 24px;
+    position: absolute;
+}
+.other-address hr {
+    background-color: #d1d7dc;
+    border: medium none;
+    color: #d1d7dc;
+    height: 1px;
+    margin: 10px 0 0;
+}
+.other-address select {
+    color: #404040;
+    height: 23px;
+    line-height: 23px;
+    width: 140px;
+}
+.other-address input {
+    height: 22px;
+}
+.other-address textarea {
+    height: 44px;
+    padding: 2px;
+}
+.other-address .go {
+    margin-left: 102px;
+}
+.other-address .tips {
+    color: gray;
+    vertical-align: middle;
+}
+.other-address h3 {
+    color: gray;
+    margin-bottom: 20px;
+}
+.other-address p {
+}
+.other-address .hd {
+    position: relative;
+}
+.other-address .new-buyer-notice {
+    color: #000;
+}
+.address .J_Msg {
+    display: inline-block;
+    vertical-align: middle;
+}
+#temp-address.selected {
+    background-color: #fff;
+    border: 1px solid #ffeb9c;
+    position: relative;
+}
+#temp-address.selected .address-info {
+    padding-left: 10px;
+}
+.max-notice {
+    left: 103px;
+    position: absolute;
+    top: 0;
+}
+.address-list .cancel, .other-address .cancel {
+    background: url("../css/images/close.png") no-repeat scroll 50% 50% transparent;
+    height: 9px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 9px;
+}
+.address-list .cancel span, .other-address .cancel span {
+    display: none;
+}
+.address-list .edit {
+    background: url("../css/images/edit.png") no-repeat scroll 0 50% transparent;
+    margin-left: 10px;
+    padding-left: 14px;
+    text-decoration: underline;
+}
+.address .address-loading {
+    display: none;
+}
+.address-list .tip {
+    color: gray;
+    margin-left: 20px;
+}
+.address-list label em {
+    color: gray;
+}
+.address-list .selected label, .address-list .selected label em {
+    font-size: 14px;
+    font-weight: 700;
+}
+.other-address .default-addr input, .other-address .default-addr label {
+    vertical-align: middle;
+}
+.other-address .default-addr label {
+    padding-left: 0;
+}
+.other-address .default-addr input {
+    height: auto;
+}
+.address li.selected {
+    box-shadow: 5px 5px 0 #f3f3f3;
+    line-height: 32px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+.address-confirm {
+    padding-top: 10px;
+    position: relative;
+}
+.address-confirm .kd-popup {
+    background-color: #ffebcc;
+    border-color: #fca700;
+    box-shadow: none;
+    float: right;
+    right: 0;
+}
+.address-confirm .kd-popup .box {
+    padding: 1px 10px 10px 20px;
+}
+.address-confirm ul em {
+    font-weight: 700;
+}
+.address-confirm .hook {
+    display: none;
+    margin-left: 10px;
+}
+.address-frame {
+    margin: 0;
+    padding: 0;
+}
+
+.dai {
+    display: inline-block;
+    margin-left: 20px;
+}
+.lower {
+    position: relative;
+    top: 15px;
+}
+.address .address-list li {
+    line-height: 25px;
+    padding-left: 92px;
+}
+.address .address-list li.selected {
+    line-height: 32px;
+}
+.address li.selected .modify {
+    margin-left: 10px;
+}
+.address li input {
+    left: 75px;
+    position: absolute;
+    top: 6px;
+}
+.address li input, .address li label, .address-list .tip {
+    vertical-align: baseline;
+}
+.address-list .extra-op {
+    display: none;
+    padding-left: 10px;
+}
+.address-list .address-info, .address-list .transfer {
+    display: inline-block;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.address-list .address-info {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.address-list .transfer-station {
+    color: #3e3e3e;
+    font-weight: 700;
+    padding: 0 2px 0 10px;
+    vertical-align: middle;
+}
+.address-list .transfer-actions {
+    color: #818181;
+    display: none;
+    padding: 0 3px;
+}
+.address-list .transfer-used {
+    color: #818181;
+    margin-left: -5px;
+}
+.address-list .selected .extra-op {
+    display: block;
+}
+.address-bar .transfer-btn {
+    background: url("../css/images/new.gif") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
+    margin-left: 20px;
+    padding-right: 25px;
+}
+.address .selected input {
+    top: 10px;
+}
+.address-list .selected .address-info, .address-list .selected .transfer {
+    display: block;
+}
+.address-list .selected .address-info {
+    padding-right: 100px;
+}
+.address-list .selected .transfer-station {
+    font-size: 14px;
+    vertical-align: top;
+}
+.address-list .selected .transfer-actions {
+    display: inline-block;
+}
+.address-list .selected .transfer-used {
+    left: 49px;
+    position: absolute;
+}
+.address-list .selected .transfer-select {
+    top: 10px;
+}
+.address-list .user-address {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.address-list .selected .user-address {
+}
+.transfer-address-popup {
+    margin-left: 0;
+}
+.transfer-address-popup .ks-overlay-close {
+    background: url("../css/images/close.png") no-repeat scroll 50% 50% transparent;
+    height: 9px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 9px;
+}
+.transfer-address-popup .ks-overlay-close-x {
+    display: none;
+}
+.transfer-address-popup .ks-contentbox {
+    background: none repeat scroll 0 0 #fff;
+}
+.transfer-address-popup .popup-main {
+    height: 385px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 820px;
+}
+.transfer-address-popup .ks-overlay-header {
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.address .marker-tip {
+}
+.address-bar .pickInStoreLink {
+    margin-left: 20px;
+}
+.address-bar .m-promo-icon {
+    background: none repeat scroll 0 0 #fc5d15;
+    color: #fff;
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 0 2px 2px;
+}
+.storeAddrPopup .ks-overlay-header {
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.transfer-address-popup .ks-overlay-header .label-error {
+    font-size: 12px;
+    font-weight: 400;
+    height: 22px;
+    line-height: 22px;
+    margin-left: 20px;
+}
+.transfer-address-popup .ks-overlay-header .label-error a {
+    text-decoration: none;
+}
+.transfer-address-popup .newaddr {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.transfer-address-popup .newaddr li em {
+    position: static;
+}
+.transfer-address-popup .newaddr input {
+    height: auto;
+}
+.transfer-address-popup .newaddr .newaddr-item-label {
+    font-weight: 400;
+}
+.transfer-address-popup .popup-main .next, .transfer-address-popup .popup-main .short-btn {
+    height: 25px;
+    line-height: 25px;
+}
+.transfer-address-popup .popup-main .next {
+    background: url("../css/images/daryblue.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #fff;
+    height: 25px;
+    margin-left: 120px;
+    margin-right: 5px;
+    width: 124px;
+}
+.other-address .tip-town {
+    background: url("../css/images/ico-dp.png") no-repeat scroll 3px center #e5f5ff;
+    border: 1px solid #40b3ff;
+    color: #404040;
+    display: none;
+    height: 20px;
+    left: 550px;
+    line-height: 20px;
+    padding: 0 2px 0 20px;
+    position: absolute;
+    top: 32px;
+}
+.other-address .tip-town i {
+    background: url("../css/images/ico-up.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 6px;
+    left: 70px;
+    position: absolute;
+    top: 20px;
+    width: 11px;
+}
+.address li
+{
+   text-decoration:none;   
+}
+.address ul
+{
+   padding-left:0px;  
+   margin-left:0px;    
+}
+.address-info  input
+{
+    margin-top:-4px;
+}
+.order-table td{
+    border-bottom:1px dashed #b2d1ff;
+    
+    }
+ */
+/******************地址管理********************/
+.address .manage-address
+{
+    float: right;
+    font-weight: 400;
+}
+.address h3
+{
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+.addresses
+{
+    margin-bottom: 30px;
+}
+.addresses h2
+{
+    margin-bottom: 15px;
+}
+.addresses .list
+{
+    width: 1004px;
+}
+.addr
+{
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    height: 125px;
+    margin: 0 14px 14px 0;
+    position: relative;
+    vertical-align: top;
+    width: 280px;
+}
+.addr *
+{
+    z-index: 2;
+}
+.addr-cur
+{
+    cursor: default;
+    z-index: 2;
+}
+.addr .curmarker
+{
+    background-position: 0 -272px;
+    height: 28px;
+    position: absolute;
+    right: 1px;
+    top: 77px;
+    visibility: hidden;
+    width: 28px;
+}
+.addr-cur .curmarker
+{
+    visibility: visible;
+}
+.addr .setdefault, .addr .deftip
+{
+    display: none;
+    opacity: 0.7;
+    padding: 0 2px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+}
+.addr .deftip
+{
+    background: none repeat scroll 0 0 #ccc;
+    color: #fff;
+}
+.addr-setfailure .deftip, .addr-setsuccess .deftip
+{
+    background: url("../css/images/msg_bg.png") no-repeat scroll 3px -248px #fff5cc;
+    color: #666;
+    display: block;
+    padding-left: 21px;
+}
+.addr-setfailure .deftip
+{
+    background-position: 3px 1px;
+}
+.addr .setdefault
+{
+    background: none repeat scroll 0 0 #fff;
+    color: #666;
+}
+.addr .setdefault:hover
+{
+    color: #c97;
+}
+.addr-set .setdefault, .addr-def .deftip
+{
+    display: block;
+}
+.addr-def .setdefault
+{
+    display: none;
+}
+.addresses .manageAddr
+{
+    float: right;
+}
+.addresses-full .createAddr, .addresses.addrMuch .createAddr
+{
+    visibility: hidden;
+}
+.addresses.addrMuch .moreAddr, .addresses .showAll
+{
+    display: none;
+}
+.addresses.addrMuch .showAll
+{
+    display: inline;
+}
+.addr .addr-toolbar
+{
+    display: none;
+}
+.address-option-binded .addr-toolbar
+{
+    display: block;
+}
+.addr .station-name
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f2f2f2;
+    border-color: #ece8e7 #ece8e7 #878787;
+    border-image: none;
+    border-style: solid solid dotted;
+    border-width: 1px;
+    margin-right: 3px;
+    padding: 0 2px;
+}
+.change-station
+{
+    display: none;
+}
+.address-option-enable .change-station
+{
+    display: block;
+    margin: 0 2px;
+}
+.addr .inner
+{
+    background: url("../css/images/taobaoselected1-03.png") no-repeat scroll 0 0;
+    padding: 11px 15px;
+    position: relative;
+    z-index: 2;
+    height:100%;
+    width:100%;
+}
+.addr-cur .inner, .addr-active .inner
+{
+    background-image: url('../css/images/taobaoselected-03.png');
+}
+.addr .addr-hd
+{
+    border-bottom: 1px solid #f2f2f2;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 0 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 260px;
+}
+.addr .addr-hd span
+{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.addr .addr-hd .change-forward
+{
+    margin-left: 8px;
+}
+.addr-hd .phone
+{
+    color: #999;
+    white-space: nowrap;
+}
+
+.addr .addr-bd-qsdw 
+{
+    height: 25px;
+    line-height:25px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 260px;
+}
+
+.addr .addr-bd-dz
+{
+    line-height:25px;
+    overflow: hidden;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 260px;
+}
+
+
+
+.address-option-binded .addr-bd
+{
+    height: 36px;
+}
+.addr-bd span
+{
+    margin-right: 3px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.addr .addr-bd .forward-info
+{
+    background-color: #f5f6f5;
+    border-bottom: 1px dotted;
+    color: #999;
+}
+.addr-bd .forward-flag
+{
+    color: #666;
+    padding: 0 5px;
+}
+.addr .city
+{
+    font-weight: 700;
+    margin-right: 10px;
+    max-width: 64px;
+}
+.addr .name
+{
+    margin-right: 3px;
+    max-width: 64px;
+}
+/****************订单列表 *********************/
+.order-table td
+{
+    border-bottom: 1px solid #CCCCCC;
+}
+.order-table
+{
+    border-bottom: 1px solid #CCCCCC;
+}
+.set-default
+{
+    font-size: 10px;
+}
+address, caption, cite, code, dfn, em, strong, th, var
+{
+    font-style: normal;
+    font-weight: normal;
+}
+.order-table th
+{
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-bottom: 1px solid #27A9E1;
+}
+.order-table td
+{
+    padding: 0 15px 0 15px;
+}
+
+.order-table .items
+{
+    padding: 5px;
+    background-color: #ffffff;
+}
+.order-table .items td
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.s-number, .s-checked
+{
+    width: 20px;
+    text-align: center;
+}
+
+.s-OPI
+{
+    width: 200px;
+    text-align: left;
+}
+
+.s-Guarantee
+{
+    width: 50px;
+    text-align: center;
+}
+.s-UnitPrice, .s-PaymentGoods
+{
+    text-align: left;
+    width: 200px;
+}
+.s-amount, .s-FHBOXSNUM
+{
+    text-align: right;
+    width: 80px;
+}
+.s-TypePrice, .s-SettlementWay
+{
+    text-align: center;
+    width: 100px;
+}
+.s-Operation
+{
+    width: 80px;
+}
+.s-Remarks
+{
+    width: 120px;
+}
+h3
+{
+    font-size: 14px;
+}
+.order-table-all-checkbox
+{
+    margin: 3px 0;
+}

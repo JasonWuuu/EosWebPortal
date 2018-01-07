@@ -1,0 +1,44 @@
+﻿.btn
+{
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+    border: 0px;
+    display: inline-block;
+     float: left;
+}
+.btn_blue
+{
+    background: url('../images/btn-blue.png') no-repeat;
+    width: 82px;
+    height: 23px;
+    color: #ffffff;
+}
+.btn_blue_left
+{
+    background: url('../images/btn-left.png') no-repeat;
+    width: 65px;
+    height: 28px;
+    color: #ffffff;
+}
+.btn_blue_lg
+{
+    background: url('../images/btn-blue-lg.png') no-repeat;
+    width: 151px;
+    height: 28px;
+    color: #ffffff;
+}
+.btn_gray_lg
+{
+    background: url('../images/btn-gray-lg.png') no-repeat;
+    width: 151px;
+    height: 28px;
+    color: #000000;
+}
+.btn_gray
+{
+    background: url('../images/btn-gray.png') no-repeat;
+    width: 82px;
+    height: 23px;
+    color: #000000;
+}

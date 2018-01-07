@@ -1,0 +1,390 @@
+﻿gridtableimg
+{
+    border-width: 0px;
+}
+
+li
+{
+    list-style-type: none;
+    cursor:pointer;
+}
+a
+{
+    text-decoration: none;
+    color:#000000;
+}
+a:hover
+{
+    color: #000000;
+}
+.content
+{
+    margin: 0 auto;
+    padding: 0px 20px 0px 67px;
+    padding-top:0px;
+}
+.fc-blue
+{
+    color: #42A9E8;
+    text-align: center;
+}
+
+.flr
+{
+    float: right;
+}
+.fll
+{
+    float: left;
+}
+.label
+{
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+.text
+{
+    line-height:45px;
+    height:45px;
+}
+.btn
+{
+    background-color: #42A9E8;
+    border: 1px solid #42A9E8;
+    padding: 8px 12px 5px 12px;
+    color: #ffffff;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn:hover
+{
+    background-color: #1E7FC3;
+    color: #ffffff;
+}
+.btn-sm
+{
+    font-size: 13px;
+    line-height: 16px;
+}
+.input-pagelist
+{
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-left:1px;
+    float:left;
+    width:15px;
+    padding: 5px 6px 3px 6px;
+    margin-right:1px;
+}
+.btn-pagelist
+{
+    font-size:12px;
+    background-color: #ffffff;
+    border: 1px solid #CCCCCC;
+    padding: 6px 6px 3px 6px;
+    color: #42A9E8;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-left:1px;
+    float:left;
+    margin-right:1px;
+}
+.btn-pagelist:hover,.btn-pagelist-current
+{
+    background-color: #42A9E8;
+    color: #ffffff;
+}
+
+.btn-lg
+{
+    padding: 7px 15px 7px 15px;
+    font-size: 15px;
+}
+.label-blue
+{
+    background-color: #42A9E8;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+.gridtable
+{
+    width: 100%;
+    margin-top: 5px;
+    color: #000000;
+    font-size: 12px;
+}
+.gridtable tr:hover,.gridtableclick
+{
+    background-color: #8D8D8D;
+}
+.gridtable, .gridtable th, .gridtable td
+{
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 5px 2px 2px 2px;
+    text-align:center;
+}
+.gridtable th
+{
+    background-color: #DCDCDC;
+    text-align:center;
+}
+.formtable
+{
+    width: 80%;
+}
+.formtable div
+{
+    padding: 5px 5px 5px 5px;
+    width: 90%;
+    margin-left: 50px;
+    text-align: left;
+}
+.formtable td
+{
+    text-align: right;
+}
+.formtable span
+{
+    float: left;
+}
+.formtable input
+{
+    float: left;
+}
+
+
+
+.textarea-lg
+{
+    float: left;
+    width: 90%;
+    height: 100px;
+}
+.input-lg
+{
+    width: 90%;
+}
+.text
+{
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 5px 5px 5px;
+}
+.floot
+{
+    height: 28px;
+    background-color: #D9EEFA;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height:28px;
+     min-width:850px;
+}
+
+.errMsg
+{
+    color: Red;
+    float: left;
+}
+.treehead
+{
+    width: 172px;
+    height: 25px;
+    background-color: #CCCCCC;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.tree-white
+{
+    margin-top: 0px;
+    border: 1px solid #CCCCCC;
+    padding-left: 0px;
+    width: 192px;
+    text-decoration: none;
+
+}
+.tree-white li
+{
+    background: url("/Images/gwhite.png") repeat-x 0 0;
+    padding: 10px 0 10px 0px;
+}
+.tree-white a
+{
+    margin-left: 15px;
+}
+.tree-white li ul li
+{
+    background-image: none;
+    background-color: #ffffff;
+    padding:7px;
+}
+.tree-white > li > ul > li
+{
+    background-image: none;
+    background-color: #ffffff;
+    padding: 5px 0 5px 0px;
+}
+.tree-white li ul
+{
+    background-image: none;
+    background-color: #ffffff;
+    margin-bottom: -10px;
+}
+.tree-blue
+{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 190px;
+    text-decoration: none;
+    padding-left: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tree-blue-son
+{
+    display: none;
+    font-weight: normal;
+}
+.tree-blue-son ul
+{
+    padding-left: 4px;
+    border: 1px solid #CCCCCC;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: -1px;
+}
+.tree-blue-son li
+{
+    margin-bottom: -1px;
+    width: 140px;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    background: #FAFAFA url("/Images/ico02.png") no-repeat 4px 4px;
+    height: 18px;
+    line-height: 18px;
+    padding: 7px 0 5px 40px;
+    font-size:13px;
+}
+.tree-blue-son li:hover
+{
+    color: #ffffff;
+    background: #42A9E8 url("/Images/ico04.png") no-repeat 2px 4px;
+}
+.tree-blue-farther
+{
+    margin: 0;
+    border: 1px solid #CCCCCC;
+    background-color: #ffffff;
+    padding: 5px 0 5px 45px;
+    line-height: 25px;
+    background: url("/Images/menus.png") no-repeat 12px 8px;
+    margin-bottom: -1px;
+}
+ .tree-blue-farther-click
+{
+    color: #ffffff;
+    background: #42A9E8 url("/Images/menux.png") no-repeat 12px 8px;
+}
+.panel
+{
+    width: 48%;
+    height: 200px;
+    float: left;
+    border: 1px solid #CCCCCC;
+    margin-left: 10px;
+    margin-bottom: 10px;
+   
+}
+.panel-head-blue
+{
+    width: 100%;
+    height: 30px;
+  /*  background: url("/Images/band.png") no-repeat -175px -132px;*/
+    background-image:url("/Images/bluespan.png");
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: bold;
+}
+.timer
+{
+    float: right;
+}
+.list-news
+{
+    margin-top:5px;
+    list-style-type: none;
+    padding-left: 10px;
+    font-size: 14px;
+    padding-right: 10px;
+    font-size:13px;
+}
+.list-news li
+{
+    height: 28px;
+    line-height: 28px;
+}
+.list-news a
+{
+    color: #000000;
+}
+.list-news a:hover
+{
+    color: #CCCCCC;
+}
+.diamond
+{
+    background: url('/Images/band.png') no-repeat -665px -130px;
+    width: 155px;
+    height: 35px;
+    color: #ffffff;
+    line-height: 30px;
+    padding-left: 35px;
+}
+.ico-new
+{
+    background: url('/Images/ico.png') no-repeat -84px -22px;
+    height: 14px;
+    width: 31px;
+}
+.dropdown-menu
+{
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    display: none;
+    float: right;
+    font-size: 14px;
+    list-style: none outside none;
+    width: 120px;
+    margin-top: 0px;
+    position:relative;
+    z-index: 1000;
+     padding-left: 0px;
+}
+.dropdown-menu li
+{
+    padding:0px 5px 0px 15px;
+    text-align:left;    
+}
+.dropdown-menu li:hover
+{
+    background-color: #42A9E8;
+    color:#ffffff;
+}

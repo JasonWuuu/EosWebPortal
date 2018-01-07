@@ -1,0 +1,106 @@
+﻿body, div, ul, li{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑", Arial, Helvetica, sans-serif;
+	color:white;
+	font-weight:bolder;
+	line-height:25px;
+	font-size:16px;
+}
+a:link, a:visited {
+	text-decoration:none;
+	color:#333333;
+}
+a:hover {
+	text-decoration: underline;
+	color:#08A5E0;
+	text-decoration:none;
+}
+
+ul, ul li {
+	list-style-type:none;
+}
+.cl {
+	zoom:1;
+}
+
+/*网站头部*/
+.col960 {
+	width:960px;
+	margin-left:0;
+}
+.navbg {
+	height:40px;
+	margin-left:45px;
+	width: 1345px;
+	background:RGB(30,127,195);
+	box-shadow: 1px 1px 7px #999;
+	position:absolute;
+	z-index:99;
+	left:0;
+}
+#navul li {
+	float: left;
+	margin-left: 0;
+	width:162px;
+	height:40px;
+	position:relative;
+	text-align:center;
+	line-height:40px;
+}
+#navul li.navhome {
+	text-align:center;
+	padding:0 0px 0 40px;
+	width:60px;
+}
+#navul li a:link, #navul li a:visited {
+	color:#FFFFFF;
+}
+#navul li ul {
+	display:none;
+	position:absolute;
+	z-index:10000;
+	top:38px;
+	left:-1px;
+	background:RGB(41,50,225);
+	border:RGB(41,50,225) 1px solid;
+	border-bottom:none;
+}
+#navul li ul li {
+	display:block;
+	width:160px;
+	float:none;
+	margin-right:0px;
+	height:28px;
+	position:relative;
+	line-height:28px;
+	border-bottom:RGB(41,50,225) 1px solid;
+	font-size:12px;
+}
+#navul li.navmoon {
+	background:RGB(41,50,225);
+	border:RGB(41,50,225) 1px solid;
+	width:160px;
+	height:38px;
+	line-height:38px;
+}
+#navul li.navmoon a {
+	color:#FFFFFF;
+}
+#navul li.navhome a:hover {
+	color:#FCFF00;
+}
+#navul li.navmoon ul {
+	display:block;
+}
+#navul li.navmoon ul a {
+	display:block;
+	width:160px;
+	height:28px;
+	line-height:28px;
+}
+#navul li.navmoon ul a:hover {
+	background:#000000;
+}

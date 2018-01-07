@@ -1,0 +1,163 @@
+﻿body
+{
+    font-size: 10pt;
+    padding: 0px;
+    margin:0px;
+}
+a, a:link
+{
+    text-decoration: none;
+    color: #000000;
+}
+.gvhide
+{
+    display: none;
+}
+.fl
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+.content
+{
+    margin-left: 80px;
+    margin-right: 20px;
+}
+.inline-block
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+.label
+{
+    margin-top: 5px;
+    float: left;
+}
+.inline-form
+{
+    padding: 15px 15px;
+}
+.form-group
+{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 0px;
+}
+.panel-head
+{
+    border: 1px solid #79AED7;
+}
+li
+{
+    list-style: none outside none;
+}
+.warp
+{
+    padding: 0 15px 0 15px;
+}
+.width90
+{
+    width: 90px;
+}
+.width80
+{
+    width: 80px;
+}
+.width150
+{
+    width: 150px;
+}
+
+.marginleft20
+{
+    margin-left: 20px;
+}
+
+.lab-head
+{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: rgb(28,117,188)
+}
+.lab-container
+{
+    background-color: #FBFDFF;
+}
+.lab-head-line
+{
+    border-top: 2px solid RGB(39,170,225);
+    width: 370px;
+}
+
+.lab-body-big
+{
+    font-size: 15px;
+    color: Black;
+    font-family: 微软雅黑;
+    font-weight: 600;
+}
+
+.lab-body-num
+{
+    font-size: 20px;
+    color: Black;
+    font-family: Arial;
+}
+
+.lab-body-low
+{
+    color: RGB(109,110,113);
+    font-size: 12px;
+    font-family: 微软雅黑;
+}
+
+.margintop10
+{
+    margin-top: 10px;
+}
+
+.margintop5
+{
+    margin-top: 5px;
+}
+
+.margintop15
+{
+    margin-top: 15px;
+}
+
+.margintop20
+{
+    margin-top: 20px;
+}
+
+.lab-body-line
+{
+    border-top: 1px solid #CCCCCC;
+    width: 370px;
+}
+
+.marginleft10
+{
+    margin-left: 10px;
+}
+
+.marginleft50
+{
+    margin-left: 50px;
+}
+
+.marginleft30
+{
+    margin-left: 30px;
+}
+
+.marginleft15
+{
+    margin-left: 15px;
+}
+

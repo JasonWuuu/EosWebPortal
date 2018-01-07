@@ -1,0 +1,268 @@
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head id="Head1">
+        <title></title>
+        <link href="../JS-easyUI/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+        <link href="../JS-easyUI/themes/icon.css" rel="stylesheet" type="text/css" />
+        <link href="../JS-easyUI/themes/demo.css" rel="stylesheet" type="text/css" />
+        <script src="../JS/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="../JS-easyUI/jquery.easyui.min.js" type="text/javascript"></script>
+        <link href="../css/button.css" rel="stylesheet" type="text/css" />
+        <link href="../css/Common.css" rel="stylesheet" type="text/css" />
+        <script src="../JS-easyUI/jquery.combobox.js" type="text/javascript"></script>
+        <script src="../JS/ArrayExt.js" type="text/javascript"></script>
+        <script src="../config.js" type="text/javascript"></script>
+        <script src="default.js" type="text/javascript"></script>
+        <link href="../b2b.css" rel="stylesheet" type="text/css" />
+        <link href="default.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <form id="form1">
+            <div id="wrapper" style="width:1000px;">
+                <div id="firstdiv" style="height:40px;margin-top:15px;color:Gray">
+                    <div style="background-image: url('../newpic/个人信息/logo1.png'); 
+                background-repeat: no-repeat; background-attachment: inherit;
+                height:25px; width:25px; float:left;">
+                    </div>
+
+                    <div style="float:left; margin-top:6px">
+                        <label id="Label1">您现在的位置</label>
+                    </div>
+                    <div style="float:left; margin-top:6px; margin-left:10px;">
+                        <label id="Label1">业务中心 > 竞价单下单</label>
+                    </div>
+                </div>
+
+                <div style="height:28px">
+                    <div style="display:inline-block">
+
+                    </div>
+                    <div style="display:inline-block">
+
+                    </div>
+
+                    <div style="display:inline-block; float:right; margin-right:20px">
+                        <input id="txtsearch" class="easyui-validatebox" type="text" name="txtsearch" />
+                        <input class="btn btn-small" type="button" value="搜索" onclick="Search()" />
+                        <input class="btn btn-small" type="button" value="需求列表" onclick="myOrderList()" />
+                    </div>
+
+                </div>
+
+                <div>
+                    <div style="float:left; width:80px; margin-top:10px;">
+                        <input type="button" class="btn btn-left width80" onclick="TabGrid(this)" value="DT" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="DTY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="FDY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="ITY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="POY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="PBT-DTY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="PTT-DTY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="PTT-FDY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="PBT-POY" />
+                        <input type="button" class="btn btn-left width80 btn-gray" onclick="TabGrid(this)" value="PTT-POY" />
+                    </div>
+                    <div style="float:left; width:920px;margin-top:10px; padding:0;height:470px">
+                        <table id="tab_list" style="width:920px;height:450px" cellspacing="0" cellpadding="0">
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="target1" style="display:none">
+                <div id="p" class="easyui-window" title="添加需求" style="width:700px;height:360px;padding:20px;background:#fafafa;" data-options="resizable:false,closable:true,collapsible:false,minimizable:false,maximizable:false">
+                    <table>
+                        <tr>
+                            <td class="style1">公司:</td>
+                            <td class="style12" colspan="2">
+                                <select id="Dp_Gf" class="easyui-combobox" name="Dp_Gf" data-options="editable:false,onSelect: function(rec){    
+                                Gf_Onchange(rec);}" panelHeight="130px" style="width:230px;">
+                                    <option value="11">江苏盛虹科贸有限公司</option>
+                                    <option value="21">江苏盛虹石化集团有限公司</option>
+                                    <option value="33">苏州永文贸易有限公司</option>
+                                    <option value="34">苏州吉舜远贸易有限公司</option>
+                                    <!--<option value="01">江苏盛虹科技股份有限公司</option>-->
+                                    <option value="45">苏州盛虹纤维有限公司</option>
+                                    <option value="02">江苏中鲈科技发展股份有限公司</option>
+                                    <option value="04">江苏国望高科纤维有限公司</option>
+                                </select>
+                            </td>
+                            <td class="style1">客户:</td>
+                            <td class="style2" colspan="2">
+                                <div style="display:inline-block">
+                                    <input id="Customer" name="Customer" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">品类:</td>
+                            <td class="style12">
+                                <label id="tab_PL">Label</label>
+                            </td>
+                            <td class="style1">品名:</td>
+                            <td class="style2">
+                                <label id="tab_PM">Label</label>
+                            </td>
+                            <td class="style1">系列:</td>
+                            <td class="style2">
+                                <label id="tab_XL">Label</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">规格:</td>
+                            <td class="style12">
+                                <label id="tab_GG">Label</label>
+                            </td>
+                            <td class="style1">批号:</td>
+                            <td class="style2">
+                                <label id="tab_PH">Label</label>
+                            </td>
+                            <td class="style1">等级:</td>
+                            <td class="style2">
+                                <label id="tab_DJ">Label</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">单价:</td>
+                            <td class="style12">
+                                <label id="tab_Price">Label</label>
+                            </td>
+                            <td class="style1">加价:</td>
+                            <td class="style2">
+                                <label id="TBox_Up">Label</label>
+
+                                <label>元/吨</label>
+                            </td>
+                            <td class="style1">价格:</td>
+                            <td class="style2">
+                                <label id="tab_SumPrice">Label</label>
+                                <label>元/千克</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">锭重:</td>
+                            <td class="style12">
+                                <label id="tab_DZ">Label</label>
+                            </td>
+                            <td class="style1">库存箱数:</td>
+                            <td class="style2">
+                                <label id="tab_KFXS">Label</label>
+                            </td>
+                            <td class="style1">库存数量:</td>
+                            <td class="style2">
+                                <label id="tab_KFSL">Label</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">产品类型:</td>
+                            <td class="style12">
+                                <select id="DropList_CPLX">
+                                    <option value="0">正常产品</option>
+                                    <option value="1">超存产品</option>
+                                    <option value="2">试样产品</option>
+                                    <option value="3">送样产品</option>
+                                    <option value="4">临存产品</option>
+                                </select>
+                            </td>
+                            <td class="style1">需求箱数:</td>
+                            <td class="style2">
+                                <input type="text" width="50px" id="tab_XQXS">
+                            </td>
+                            <td class="style1">需求数量:</td>
+                            <td class="style2">
+                                <input type="text" width="50px" id="tab_XQSL">
+                                <label>千克</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td class="style1">&nbsp;</td>
+                            <td class="style2">&nbsp;</td>
+                            <td colspan="2">
+                                <div style="display:inline-block; float:right; margin-right:30px">
+                                    <input class="btn btn-small" type="button" value="添加到需求列表" onclick="addDemand()" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="Div1" style="display:none">
+                <div id="ywy_stockinfo" class="easyui-window" title="库存明细" style="width:954px;height:356px;padding:0px;background:#fafafa;"
+                    data-options="modal:true,resizable:false,closable:true,collapsible:false,minimizable:false,maximizable:false">
+                    <div style="float:left; width:940px; padding:0;height:320px">
+                        <table id="tab_stockinfo" style="width:940px;height:320px" cellspacing="0" cellpadding="0">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div2" style="display:none">
+                <div id="ordlist" class="easyui-window" title="需求列表" style="width:1164px;height:556px;padding:0px;background:#fafafa;" data-options="modal:true,resizable:false,closable:true,collapsible:false,minimizable:false,maximizable:false">
+                    <div style="float:left; width:1150px; padding:0;height:520px">
+                        <table id="tab_ordlist" style="width:1150px;height:520px" cellspacing="0" cellpadding="0">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </body>
+
+    </html>

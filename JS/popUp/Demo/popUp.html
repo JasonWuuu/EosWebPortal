@@ -1,0 +1,31 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>popUp</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/popUp.css" media="all" />
+	<script type="text/javascript" src="../js/jquery-1.7.js"></script>
+	<script type="text/javascript" src="../js/popUp.js"></script>
+</head>
+<body>
+ <div class="button">click me</div>
+ </body>
+ <script type="text/javascript">
+ $(document).ready(function(){
+     $.alert('200px','消息框','Are you ready?');
+     $('.button').click(function(){
+         $(this).popUp({
+              width : 400,
+              height : 200,
+              title : '标题',
+              content : '<div class="test">我的内容!</div>',
+              callback : function(){
+                 $.alert('200px','消息框','这是回调函数!');  //宽度，标题，内容
+              }
+          }); 
+     });
+  });
+ </script>
+</body>
+</html>

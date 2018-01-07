@@ -1,0 +1,80 @@
+﻿.btn
+{
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 15px 4px 15px;
+    border: 1px solid #27A9E1;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #27A9E1;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#27A9E1), to(#1C76BD));
+    background: -webkit-linear-gradient(#27A9E1, #1C76BD);
+    background: -moz-linear-gradient(#27A9E1, #1C76BD);
+    background: -ms-linear-gradient(#27A9E1, #1C76BD);
+    background: -o-linear-gradient(#27A9E1, #1C76BD);
+    background: linear-gradient(#27A9E1, #1C76BD);
+    -pie-background: linear-gradient(#27A9E1, #1C76BD);
+    color: #ffffff;
+    font-size: 12px;
+    position: relative;
+    behavior: url(../css/pie.htc);
+}
+.btn:link
+{
+     color: #ffffff;
+}
+.btn-gray:link
+{
+   color: #000000; 
+}
+.btn-gray:hover
+{
+    color: #ffffff;
+    border: 1px solid #27A9E1;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#27A9E1), to(#1C76BD));
+    background: -webkit-linear-gradient(#27A9E1, #1C76BD);
+    background: -moz-linear-gradient(#27A9E1, #1C76BD);
+    background: -ms-linear-gradient(#27A9E1, #1C76BD);
+    background: -o-linear-gradient(#27A9E1, #1C76BD);
+    background: linear-gradient(#27A9E1, #1C76BD);
+    -pie-background: linear-gradient(#27A9E1, #1C76BD);
+}
+.btn-gray
+{
+    color: #000000;
+    border: 1px solid #CCCCCC;
+    background: #E7E8E9;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#E7E8E9), to(#FFFFFF));
+    background: -webkit-linear-gradient(#E7E8E9, #FFFFFF);
+    background: -moz-linear-gradient(#E7E8E9, #FFFFFF);
+    background: -ms-linear-gradient(#E7E8E9, #FFFFFF);
+    background: -o-linear-gradient(#E7E8E9, #FFFFFF);
+    background: linear-gradient(#E7E8E9, #FFFFFF);
+    -pie-background: linear-gradient(#E7E8E9, #FFFFFF);
+}
+.btn-small
+{
+    font-size: 11px;
+    padding: 4px 10px 1px 10px;
+}
+
+.btn-head
+{
+    margin-right: -4px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+.btn-left
+{
+    margin-right: -4px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius:  5px 0px 0px 5px;
+    border-radius:  5px 0px 0px 5px;
+}
+.btn-width120
+{
+    width:120px;    
+}

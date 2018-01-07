@@ -1,0 +1,38 @@
+﻿.gridtable
+{
+    width: 100%;
+    margin-top: 5px;
+    color: #000000;
+    font-size: 12px;
+}
+.gridtableclick
+{
+    background-color: #8D8D8D;
+}
+.gridtable, .gridtable th, .gridtable td
+{
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height:23px;
+    text-align:center;
+    padding-left:8px;
+    padding-right:8px;
+}
+.gridtable th
+{
+    background: #27A9E1;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#27A9E1), to(#1C76BD));
+    background: -webkit-linear-gradient(#27A9E1, #1C76BD);
+    background: -moz-linear-gradient(#27A9E1, #1C76BD);
+    background: -ms-linear-gradient(#27A9E1, #1C76BD);
+    background: -o-linear-gradient(#27A9E1, #1C76BD);
+    background: linear-gradient(#27A9E1, #1C76BD);
+    -pie-background: linear-gradient(#27A9E1, #1C76BD);
+    color: #000000;
+    font-weight:normal;
+    position: relative;
+    text-align:center;
+    height:28px;
+    behavior: url(../css/pie.htc);
+}

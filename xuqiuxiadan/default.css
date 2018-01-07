@@ -1,0 +1,53 @@
+.style1 {
+    width: 80px;
+    text-align: right;
+}
+
+.style12 {
+    width: 150px;
+    text-align: left;
+}
+
+.style2 {
+    width: 100px;
+    text-align: left;
+}
+
+.tabtitle {
+    font-size: small;
+    text-align: center;
+    margin-top: 20px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.tabtitle-a {
+    font-size: small;
+    text-align: center;
+    margin-top: 10px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.datagrid-header-inner {
+    height: 70px;
+    background: url("../images/gridhead1.png") repeat-x scroll left bottom #6FBDEA;
+    background-color: #6FBDEA;
+}
+
+.datagrid-view1 {
+    width: 100px;
+}
+
+.datagrid-cell {
+    height: 20px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.clear {
+    clear: both;
+}

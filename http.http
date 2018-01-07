@@ -1,0 +1,8 @@
+@myRequestList=http://localhost:3000/requests?reqtyp=myreq
+
+###
+GET {{myRequestList}} HTTP/1.1
+###
+
+GET http://baidu.com HTTP/1.1
+###
